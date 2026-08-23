@@ -98,7 +98,7 @@ NOMAD/
 ├── docs/                          # shared architecture notes / decision records
 ├── .gitignore
 └── README.md
-
+```
 ## Backend Capability Endpoints
 
 The backend currently exposes 12 capability routers, mapped to the
