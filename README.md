@@ -8,14 +8,6 @@ carries, and how a multi-location network compares — by resolving addresses
 into a standardized, cited physical-world profile and running scoring/
 decision logic on top of it.
 
-The project is split into three owned modules, built in parallel and merged
-into one repo:
-
-| Module | Owner | Responsibility |
-|---|---|---|
-| **Backend** | Vedant | Mireye API integration, data ingestion & normalization, capability endpoints |
-| **AI & Decision Engine** | Mansi | Scoring, ranking, recommendation logic, capability-specific reasoning models |
-| **Frontend & Product** | Shivansh | Dashboard, visualization, user workflow, demo experience |
 
 ## 🛠️ Quick Start
 
