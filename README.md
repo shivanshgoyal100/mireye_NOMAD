@@ -123,22 +123,6 @@ Each has its own service layer, a Mireye integration wrapper, and an
 integration test. `docs/mireye_coverage.md` documents the underlying Mireye
 data categories, metadata fields, and known coverage gaps.
 
-## ✅ Current Status
-
-- **Backend:** the 12 endpoints above are implemented and mounted, backed by
-  a working async Mireye client (`httpx`, bearer auth) calling
-  `/v1/meta/fields` and `/v1/fetch`. CSV/JSON bulk ingestion connectors are
-  scaffolded but not built out; error-handling/missing-data behavior across
-  endpoints still needs validation; architecture write-up is pending.
-- **AI & Decision Engine:** module structure is scaffolded (scoring,
-  reasoning, interfaces); scoring/ranking logic and the reasoning pipeline
-  are in progress — see `ai-engine/README.md` for current detail.
-- **Frontend:** module structure is scaffolded (dashboard shell, location
-  input, results pages, API client); build-out is in progress — see
-  `frontend/README.md` for current detail.
-
-This section reflects the repo as of the last update — check each module's
-own README for the most current per-module status.
 
 ##  Contribution Guidelines
 
