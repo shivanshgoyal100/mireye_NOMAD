@@ -52,6 +52,7 @@ npm run dev
 ```
 
 ## 📁 Project Architecture
+
 NOMAD/
 ├── .github/
 │   └── workflows/
@@ -98,7 +99,7 @@ NOMAD/
 ├── .gitignore
 └── README.md
 
-## 🔌 Backend Capability Endpoints
+## Backend Capability Endpoints
 
 The backend currently exposes 12 capability routers, mapped to the
 opportunity areas in the project plan:
@@ -139,7 +140,7 @@ data categories, metadata fields, and known coverage gaps.
 This section reflects the repo as of the last update — check each module's
 own README for the most current per-module status.
 
-## 🤝 Contribution Guidelines
+##  Contribution Guidelines
 
 Each module is owned by one person and worked on in its own branch
 namespace. `main` is protected — no direct pushes, PRs required, CI checks
