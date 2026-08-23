@@ -52,7 +52,7 @@ npm run dev
 ```
 
 ## 📁 Project Architecture
-
+```
 NOMAD/
 ├── .github/
 │   └── workflows/
