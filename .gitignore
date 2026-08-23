@@ -1,0 +1,26 @@
+﻿# --- secrets: never commit these, in any module ---
+.env
+.env.*
+!.env.example
+
+# --- python (backend, ai-engine) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+
+# --- node (frontend) ---
+node_modules/
+dist/
+build/
+
+# --- editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

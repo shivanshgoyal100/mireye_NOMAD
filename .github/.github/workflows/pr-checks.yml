@@ -1,0 +1,26 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, edited, synchronize]
+
+jobs:
+  branch-and-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce branch prefix
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          if [[ ! "$BRANCH" =~ ^(backend|ai|frontend|chore)/ ]]; then
+            echo "Branch '$BRANCH' must start with backend/, ai/, frontend/, or chore/"
+            exit 1
+          fi
+
+      - name: Enforce PR title tag
+        run: |
+          TITLE="${{ github.event.pull_request.title }}"
+          if [[ ! "$TITLE" =~ ^\[(backend|ai|frontend|chore)\] ]]; then
+            echo "PR title must start with [backend], [ai], [frontend], or [chore]"
+            exit 1
+          fi
